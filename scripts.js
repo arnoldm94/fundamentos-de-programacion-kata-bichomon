@@ -38,3 +38,8 @@ Imprime por consola la URL de la página. */
 /* Cambia el fondo de todos los infocard-lg-data text-muted para todos los Pokimon voladores itype flying 
  */
 
+const Vol = document.querySelectorAll(".infocard .infocard-lg-data small a.itype.flying");
+for (let i = 0; i < Vol.length; i++){
+    const div1 = Vol[i].parentElement
+    div1.style.backgroundColor = "rgba(12,120,0)";
+}
